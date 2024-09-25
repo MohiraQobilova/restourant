@@ -1,0 +1,41 @@
+{% extends 'restourant/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="{% static 'css/search.css' %}">
+
+<!-- fashion section start -->
+<div class="container">
+    <div class="search_section">
+        <h1 class="title_search">serach objects => {{query}}</h1>
+        <!-- start -->
+            <div class="container">
+
+                {% for item in search_objs %}
+                <div class="swiper-slide">
+                    <div class="box_main">
+                        <h4 class="shirt_text">{{item.title}}</h4>
+                        <p class="price_text">Price <span style="color: #262626;">$ {{item.price}}</span></p>
+                        <div class="tshirt_img"><img src="{{item.image.url}}"></div>
+                        <div class="btn_main">
+                            <div class="buy_bt"><a href="{% url 'cart' %}">Buy Now</a></div>
+                            <div class="seemore_bt"><a href="{% url 'menu_detail_url' %}">See More</a></div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <!-- end -->
+</div>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+
+{% endblock %}

@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 2% ;
+}
+    
+
+
+.filters-content .row.grid {
+   
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* Qatorlar orasidagi boshoqning chizilgan qismini o'chirish */
+.filters-content .row.grid [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Mahsulotning katta ekranli ko'rinmaydigan qismini joylashtirish */
+.s_product_text {
+    max-width: 500px; /* Sizga qulay keladigan bo'lgan qiymat */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mahsulot sarlavhasini stili */
+.s_product_text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Mahsulot narxini stili */
+.s_product_text h2 {
+    font-size: 28px;
+    color: #ff5722; /* Sizga kerakli rang */
+    margin-bottom: 15px;
+}
+
+/* Mahsulot xususiyatlari ro'yxatining stili */
+.s_product_text ul.list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.s_product_text ul.list li {
+    margin-bottom: 10px;
+}
+
+.s_product_text ul.list li a {
+    color: #333; /* Sizga kerakli rang */
+    text-decoration: none;
+}
+
+.s_product_text ul.list li a.active {
+    font-weight: bold;
+}
+
+/* Mahsulot matni stili */
+.s_product_text p {
+    font-size: 16px;
+    color: #666; /* Sizga kerakli rang */
+    margin-bottom: 20px;
+}
+
+/* Mahsulot sonini kiritish maydonining stili */
+.product_count {
+    margin-bottom: 20px;
+}
+
+.product_count label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product_count input[type="text"] {
+    width: 50px; /* Sizga qulay keladigan bo'lgan qiymat */
+    padding: 5px;
+    text-align: center;
+}
+
+.product_count .items-count {
+    background-color: #f1f1f1; /* Sizga kerakli rang */
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+/* Korzinkaga qo'shish tugmasining stili */
+.card_area {
+    margin-top: 20px;
+}
+
+.card_area a {
+    text-decoration: none;
+    color: #333; /* Sizga kerakli rang */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card_area a:hover {
+    color: #ff5722; /* Sizga kerakli rang */
+}
